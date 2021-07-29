@@ -15,21 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\MNIST.h">
+    <ClInclude Include="MNIST.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\XORDataHandler.h">
+    <ClInclude Include="XORDataHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\MNIST.cpp">
+    <ClCompile Include="MNIST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\XORDataHandler.cpp">
+    <ClCompile Include="XORDataHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XORFileHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

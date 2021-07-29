@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MNIST.h" />
+    <ClInclude Include="XORDataHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MNIST.cpp" />
+    <ClCompile Include="XORDataHandler.cpp" />
+    <ClCompile Include="XORFileHandler.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4B6D37A8-BAF3-492C-BCD0-3C41550062E5}</ProjectGuid>
@@ -137,15 +147,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\MNIST.h" />
-    <ClInclude Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\XORDataHandler.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\main.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\MNIST.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\NeuralNetwork\GenerateXORDataset\XORDataHandler.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
