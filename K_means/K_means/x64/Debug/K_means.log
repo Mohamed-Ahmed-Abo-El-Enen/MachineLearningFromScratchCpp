@@ -1,0 +1,8 @@
+﻿  k_means.cpp
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(87,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(88,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(90,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(100,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(142,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(154,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  K_means.vcxproj -> C:\Users\Fuhrer\source\repos\K_means\x64\Debug\K_means.exe

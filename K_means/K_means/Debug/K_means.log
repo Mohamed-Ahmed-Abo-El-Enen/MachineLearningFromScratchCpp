@@ -1,0 +1,3 @@
+﻿  k_means.cpp
+C:\Users\Fuhrer\source\repos\K_means\K_means\k_means.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+  K_means.vcxproj -> C:\Users\Fuhrer\source\repos\K_means\Debug\K_means.exe
