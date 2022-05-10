@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Fuhrer\source\repos\KNN\KNN\ReadCSV.h(37,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fuhrer\source\repos\KNN\KNN\main.cpp(76,23): warning C4018: '<': signed/unsigned mismatch
+  KNN.vcxproj -> C:\Users\Fuhrer\source\repos\KNN\Debug\KNN.exe

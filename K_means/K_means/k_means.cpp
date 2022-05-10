@@ -3,6 +3,7 @@
 #include<iostream>
 #include<sstream>
 #include<vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -27,6 +28,7 @@ struct Point
 		for (size_t i = 0; i < features.size(); i++)		
 			dist += (stod(features[i]) - stod(_features[i])) * (stod(features[i]) - stod(_features[i]));
 		
+		dist = sqrt(dist);
 		return dist;
 	}
 	
