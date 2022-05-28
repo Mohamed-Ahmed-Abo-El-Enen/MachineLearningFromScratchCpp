@@ -1,0 +1,8 @@
+﻿  WriteCSV.cpp
+C:\Users\Fuhrer\source\repos\DecisionTree\DecisionTree\WriteCSV.cpp(10,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fuhrer\source\repos\DecisionTree\DecisionTree\WriteCSV.cpp(15,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fuhrer\source\repos\DecisionTree\DecisionTree\WriteCSV.cpp(18,24): warning C4018: '<': signed/unsigned mismatch
+  WriteCSV.h
+  main.cpp
+  Generating Code...
+  DecisionTree.vcxproj -> C:\Users\Fuhrer\source\repos\DecisionTree\Debug\DecisionTree.exe
