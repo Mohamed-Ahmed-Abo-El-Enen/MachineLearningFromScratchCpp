@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include<map>
+#include <map>
 
 using namespace std;
 
