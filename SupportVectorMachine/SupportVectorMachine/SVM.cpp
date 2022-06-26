@@ -19,22 +19,6 @@ SVM::~SVM()
 {
 }
 
-double SVM::dotProduct(const vector<double> x1, const vector<double> x2)
-{
-	double result = 0.0;
-
-	if (x1.size() != x2.size())
-	{
-		cerr << "ERROR: Could't match the number of elements for Dot Product" << endl;
-		exit(-1);
-	}
-
-	for (size_t i = 0; i < x1.size(); i++)
-		result += x1[i] * x2[i];
-
-	return result;
-}
-
 void SVM::log(const string str)
 {
 	if (this->verbose)
@@ -45,23 +29,6 @@ void SVM::log(const string str)
 //void SVM::train(const vector<vector<double>> class1Data, const vector<vector<double>> class2Data, const size_t D, const double C, const double lr, const double limit)
 void SVM::train(const vector<vector<double>> x, const vector<int> y, const size_t D, const double C, const double lr, const double limit)
 {
-	//vector<vector<double>> x;
-	//vector<int> y;
-
-	////Set class 1 Data
-	//for (int i = 0; i < class1Data.size(); i++)
-	//{
-	//	x.push_back(class1Data[i]);
-	//	y.push_back(1);
-	//}
-
-	////Set class 2 Data
-	//for (int i = 0; i < class2Data.size(); i++)
-	//{
-	//	x.push_back(class2Data[i]);
-	//	y.push_back(-1);
-	//}
-
 	// Set Lagrange Multiplier and Parameters
 	size_t N = x.size();
 	vector<double> alpha = vector<double>(N, 0.0);
@@ -137,7 +104,7 @@ void SVM::train(const vector<vector<double>> x, const vector<int> y, const size_
 		this->log("\r error: " + to_string(error));
 
 		// Break early 
-		if ((error - previousError) <= breakEps)
+		if (abs(error - previousError) <= breakEps)
 			iterations++;
 		else
 		{

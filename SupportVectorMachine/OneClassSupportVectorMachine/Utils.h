@@ -9,23 +9,6 @@
 
 using namespace std;
 
-
-double dotProduct(const vector<double> x1, const vector<double> x2)
-{
-	double result = 0.0;
-
-	if (x1.size() != x2.size())
-	{
-		cerr << "ERROR: Could't match the number of elements for Dot Product" << endl;
-		exit(-1);
-	}
-
-	for (size_t i = 0; i < x1.size(); i++)
-		result += x1[i] * x2[i];
-
-	return result;
-}
-
 void MinMaxScaler(vector<vector<double>>& X, vector<double>& minVec, vector<double>& maxVec)
 {
 	for (size_t i = 0; i < X[0].size(); i++)

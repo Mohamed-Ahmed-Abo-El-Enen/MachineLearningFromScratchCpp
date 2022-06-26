@@ -27,7 +27,6 @@ private:
 	vector<double>alpha_s_in;
 
 	void log(const string str);
-	double dotProduct(const vector<double> x1, const vector<double> x2);
 public:
 	double accuaracy;
 	double accuracyC1, accuracyC2;
