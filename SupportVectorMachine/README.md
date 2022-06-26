@@ -12,9 +12,10 @@
 ![train](https://user-images.githubusercontent.com/56967584/130327310-f7a7d992-970e-4026-9ac0-6ac61129ca5c.png)
 ![test](https://user-images.githubusercontent.com/56967584/130327313-baf9e738-8918-49ea-857a-65f72a23f491.png)
 
+<br> <hr> <br>
 
 # One Class SVM
-
+## Formula
 ![OneClass-SVM_dual](https://user-images.githubusercontent.com/56967584/130267821-a46ce22f-1acd-4e37-9e14-0269e30b1e00.png)
 ![OneClass-SVM_obj](https://user-images.githubusercontent.com/56967584/130267828-c346f820-7c96-4b7d-afc9-127d7539b0d5.png)
 ![OneClass-SVM_delta](https://user-images.githubusercontent.com/56967584/130267833-48e2d2a8-e54f-407d-92e1-db31f85f13f1.png)
