@@ -5,13 +5,18 @@ Sigmoid::Sigmoid()
 	layerName = "Sigmoid";
 }
 
+double SigmoidVal(double x)
+{
+	return  1.0 / (1.0 + exp(-x));
+}
+
 Tensor<double> Sigmoid::SigmoidFunc()
 {
 	Tensor<double> result(m_Input->numDims, m_Input->m_Dims);
 	for (int i = 0; i < m_Input->GetSize(); i++)
 	{
 		double x = m_Input->GetListIndex(i);
-		double value = 1.0 / (1.0 + exp(-x));
+		double value = SigmoidVal(x);
 		result.SetListIndex(value, i);
 	}
 	return result;
@@ -23,6 +28,7 @@ Tensor<double> Sigmoid::SigmoidGradient()
 	for (int i = 0; i < m_Input->GetSize(); i++)
 	{
 		double x = m_Input->GetListIndex(i);
+		x = SigmoidVal(x);
 		double value = (x * (1.0 - x));
 		result.SetListIndex(value, i);
 	}
