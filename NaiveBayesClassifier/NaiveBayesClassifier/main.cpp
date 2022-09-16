@@ -4,18 +4,20 @@
 int main()
 {
     int yIndex = 4;
-    string filePath = "../Dataset/iris.data";
-    vector<vector<double>> dataset = DataReader::ReadIrisDataset(filePath, yIndex);
 
-    random_shuffle(dataset.begin(), dataset.end());
+	string filePath = "../Dataset/iris.data";
+	vector<vector<double>> dataset = DataReader::ReadIrisDataset(filePath, yIndex);
+
+	random_shuffle(dataset.begin(), dataset.end());
     float testSize = 0.2;
     vector<vector<double>> trainDataset;
     vector<vector<double>> testDataset;
     DataManipulation::Train_Test_Split(dataset, testSize, trainDataset, testDataset);
 
-    cout<<"Iris train data size is ( " << trainDataset.size() << " )" << endl;
+    cout<<"Iris train data size = " << trainDataset.size() << endl;
 
-    cout<<"Iris test data size is ( " << testDataset.size() << " )" << endl;
+    cout<<"Iris test data size = " << testDataset.size() << endl;
+    cout << "\n";
 
     NaiveBayes naiveBayes = NaiveBayes();
     naiveBayes.fit(trainDataset, yIndex);
