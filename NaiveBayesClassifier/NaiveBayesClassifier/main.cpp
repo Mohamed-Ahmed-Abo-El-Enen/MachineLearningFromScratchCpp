@@ -4,11 +4,10 @@
 int main()
 {
     int yIndex = 4;
+    string filePath = "../Dataset/iris.data";
+    vector<vector<double>> dataset = DataReader::ReadIrisDataset(filePath, yIndex);
 
-	string filePath = "../Dataset/iris.data";
-	vector<vector<double>> dataset = DataReader::ReadIrisDataset(filePath, yIndex);
-
-	random_shuffle(dataset.begin(), dataset.end());
+    random_shuffle(dataset.begin(), dataset.end());
     float testSize = 0.2;
     vector<vector<double>> trainDataset;
     vector<vector<double>> testDataset;
@@ -29,7 +28,7 @@ int main()
         predicitions.push_back(index);
     }
 
-    cout << "Accuracy = " << Evaluation::CalculateAccuracy(DataManipulation::GetColumnValues(testDataset, 4), predicitions) << endl;
+    cout << "Test Dataset Accuracy = " << Evaluation::CalculateAccuracy(DataManipulation::GetColumnValues(testDataset, 4), predicitions) << endl;
     naiveBayes.PrintClassesDistribution();
     return 0;
 }
