@@ -1,0 +1,19 @@
+4
+<start> firstst secondst <eos>
+3
+8
+<start> firstst 0.526
+<start> secondst 0.474
+firstst <eos> 0.002
+firstst firstst 0.969
+firstst secondst 0.029
+secondst <eos> 0.002
+secondst firstst 0.063
+secondst secondst 0.935
+6
+firstst a 0.005
+firstst b 0.775
+firstst c 0.220
+secondst a 0.604
+secondst b 0.277
+secondst c 0.119
